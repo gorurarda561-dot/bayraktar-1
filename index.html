@@ -8,13 +8,21 @@
         <title>BAYRAKTAR 1</title>
     </head>
     <body>
-        <model-viewer src="assets/bayraktar.glb" camera-orbit="75deg 80deg 10m" auto-rotate field-of-view="30deg" max-camera-orbit="auto auto 25m" shadow-intensity="1" camera-controls interaction-prompt="none">
-            <button class="hotspot" slot="hotspot-1" data-position="-1 -0.2 0" data-normal="-0.73 0.05 0.69">
-                <div class="annotation">Isı Güdümlü Füze Sistemi</div>
-            </button>
-            <button class="hotspot" slot="hotspot-2" data-position="0.1 -0.38 0.85" data-normal="-0.8 -0.54 0.27" data-visibility-attribute="visible">
-                <div class="annotation">Kızılötesi Kamera Donanımı</div>
-            </button> 
-        </model-viewer> 
+        <div class="yazı" style="background: linear-gradient(#ffffff, #ada996); overflow-x: hidden; height: 100%; width: 100%;">
+            <span style="position: absolute; text-align: center; font-size: 100px; line-height: 100%; left: 50%; transform: translateX(-50%);">
+                BAYRAKTAR I
+            </span>
+            <model-viewer src="assets/bayraktar.glb" camera-orbit="75deg 80deg 10m" auto-rotate field-of-view="30deg" max-camera-orbit="auto auto 25m" shadow-intensity="1" camera-controls interaction-prompt="none">
+                <button class="hotspot" slot="hotspot-1" data-position="-1 -0.2 0" data-normal="-0.73 0.05 0.69">
+                    <div class="annotation">Isı Güdümlü Füze Sistemi</div>
+                </button>
+                <button class="hotspot" slot="hotspot-2" data-position="0.1 -0.38 0.85" data-normal="-0.8 -0.54 0.27" data-visibility-attribute="visible">
+                    <div class="annotation">Kızılötesi Kamera Donanımı</div>
+                </button>
+                <button class="hotspot" slot="hotspot-3" data-position="0.1 0.15 -1" data-normal="-0.8 -0.54 0.27" data-visibility-attribute="visible">
+                    <div class="annotation">Pervane Bilgisi</div>
+                </button>
+            </model-viewer> 
+        </div>
     </body>
 </html>
