@@ -55,3 +55,15 @@ model-viewer{
         transform: TranslateY(0%);
     }
 }
+
+.parca {
+  background: gray;
+  padding: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.parca.aktif {
+  background: red;
+  transform: scale(1.2);
+}

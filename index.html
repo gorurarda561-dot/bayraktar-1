@@ -25,6 +25,20 @@
                 <button class="hotspot" slot="hotspot-4" data-position="0.1 0.15 -0.5" data-normal="-0.8 -0.54 0.27" data-visibility-attribute="visible">
                     <div class="annotation"> motor</div>
                 </button>
+                <div class="parca">1</div>
+<div class="parca">2</div>
+<div class="parca">3</div>
+
+<script>
+const parcalar = document.querySelectorAll(".parca");
+
+parcalar.forEach(p => {
+  p.addEventListener("click", () => {
+    parcalar.forEach(x => x.classList.remove("aktif"));
+    p.classList.add("aktif");
+  });
+});
+</script>
             </model-viewer> 
         </div>
     </body>
