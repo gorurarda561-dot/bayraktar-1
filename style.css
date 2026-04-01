@@ -1,13 +1,13 @@
-/* body{ */
-/*     overflow: hidden; */
-/* } */
-/* html,body{ */
-/*     margin: 0; padding: 0; height: 100%; width: 100%; */
-/* } */
+body{
+    overflow: hidden;
+}
+html,body{
+    margin: 0; padding: 0; height: 100%; width: 100%;
+}
 model-viewer{
-    height: 1000px;
+    height: 100%;
     width: 100%;
-    /* background-color: black;  */
+    animation: 2s ease-out 3s 1 bayraktar-efekt;
 }
 
 .hotspot {
@@ -33,3 +33,25 @@ model-viewer{
 /* :not(:defined)>* { */
 /*     display: none; */
 /* } */
+
+@keyframes bayraktar-efekt {
+  0% {
+      opacity: 0;
+      transform: TranslateY(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: TranslateY(0%);
+  }
+}
+
+@keyframes arkaplan-efekt {
+    0% {
+        opacity: 1;
+        transform: TranslateY(100%);
+    }
+    100% {
+        opacity: 0.5;
+        transform: TranslateY(0%);
+    }
+}
