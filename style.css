@@ -5,6 +5,9 @@ html,body{
     margin: 0; padding: 0; height: 100%; width: 100%;
 }
 model-viewer{
+
+
+
     height: 100%;
     width: 100%;
     animation: 2s ease-out 0s 1 bayraktar-efekt;
@@ -19,7 +22,7 @@ model-viewer{
     box-sizing: border-box;
     pointer-events: none;
     --min-hotspot-opacity: 0;
-    background-color: red;
+    background-color: darkred;
 }
 
 .annotation {
@@ -54,16 +57,4 @@ model-viewer{
         opacity: 0.5;
         transform: TranslateY(0%);
     }
-}
-
-.parca {
-  background: gray;
-  padding: 20px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.parca.aktif {
-  background: red;
-  transform: scale(1.2);
 }
